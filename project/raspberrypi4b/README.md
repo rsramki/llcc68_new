@@ -2,15 +2,24 @@
 
 #### 1.1 Board Info
 
-Board Name: Raspberry Pi 4B.
+Board Name: Raspberry Pi 4B / Raspberry Pi Zero.
+Hat Module : PIHAT-LORA  v1.0 with E220-900M22S
 
-SPI Pin: SCLK/MOSI/MISO/CS GPIO11/GPIO10/GPIO9/GPIO8.
+SPI Pin: 
+      Lable:      BCM       MODULE PIN  - Module status.
+      SCLK Pin : GPIO11     SCK  -  18 <input>
+      MOSI Pin : GPIO10     MOSI -  17 <input>
+      MISO Pin : GPIO9      MISO -  16 <output>
+      CS Pin   : GPIO8      NSS -   19 <input> Chip Selection for SPI
 
-RESET Pin: RST GPIO27.
-
-DIO1 Pin: DIO1 GPIO22.
-
-BUSY Pin: BUSY GPIO17.
+Other GPIO Pin
+      RESET Pin: GPIO27      NRST - 15 <input>   Chip Rest trigger Pin 
+      DIO1 Pin : GPIO22      DIO1 - 13 <input/output> 
+      DI02 Pin : Not Mapped  DI02 -  8 <input/output> 
+      BUSY Pin : GPIO17      BUSY - 14 <output>
+      RXEN Pin : Not Mapped  RXEN -  6 <input> RF Switch received control pin    
+      TXEN Pin : Not mapped  TXEN -  7 <input> RF Swithc emission contro pin.
+   
 
 ### 2. Install
 
